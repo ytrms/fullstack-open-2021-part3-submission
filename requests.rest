@@ -5,3 +5,30 @@ GET http://localhost:3001/api/persons/6
 
 ###
 DELETE http://localhost:3001/api/persons/1
+
+### good request
+POST http://localhost:3001/api/persons
+content-type: application/json
+
+{
+    "name": "sample",
+    "number": "123342",
+    "cursed": true
+}
+
+### bad request (no name)
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+  "number": "123"
+}
+
+### bad request (name already exists)
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+  "name": "Ada Lovelace",
+  "number": "123"
+}
