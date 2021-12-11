@@ -1,13 +1,13 @@
-GET http://localhost:3001/api/persons
+GET https://fso-notes-app-ytrms.herokuapp.com/api/persons
 
 ###
-GET http://localhost:3001/api/persons/6
+GET https://fso-notes-app-ytrms.herokuapp.com/api/persons/6
 
 ###
-DELETE http://localhost:3001/api/persons/1
+DELETE https://fso-notes-app-ytrms.herokuapp.com/api/persons/1
 
 ### good request
-POST http://localhost:3001/api/persons
+POST https://fso-notes-app-ytrms.herokuapp.com/api/persons
 content-type: application/json
 
 {
@@ -17,7 +17,7 @@ content-type: application/json
 }
 
 ### bad request (no name)
-POST http://localhost:3001/api/persons
+POST https://fso-notes-app-ytrms.herokuapp.com/api/persons
 Content-Type: application/json
 
 {
@@ -25,7 +25,7 @@ Content-Type: application/json
 }
 
 ### bad request (name already exists)
-POST http://localhost:3001/api/persons
+POST https://fso-notes-app-ytrms.herokuapp.com/api/persons
 Content-Type: application/json
 
 {
